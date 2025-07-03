@@ -249,3 +249,93 @@ section {
     background-color: var(--main--color);
     transform: scale(1.1);
 }
+
+@media (max-width: 1123px) {
+  /* Remove a logo visualmente */
+  .logo {
+    display: none;
+  }
+
+  html {
+    font-size: 55%;
+  }
+
+  .header section {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .navbar a {
+    font-size: 1.6rem;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .home-container {
+    padding-top: 10rem;
+    text-align: center;
+  }
+
+  .home-container .content h3 {
+    font-size: 4rem;
+  }
+
+  .home-container .content p {
+    font-size: 1.6rem;
+  }
+
+  .about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about .row img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .box-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha */
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto;
+    min-height: 300px;
+  }
+}
+
+/* Celular: 1 produto por linha */
+@media (max-width: 780px) {
+  .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .content h3 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+
+  .footer .share img {
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+  }
+}
